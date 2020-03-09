@@ -14,10 +14,10 @@
       import {Runtime} from "https://unpkg.com/@observablehq/runtime@4/dist/runtime.js";
       import notebook from "https://api.observablehq.com/@kuquanghuylcb/covid-19-data.js?v=3";
       const renders = {
-        "title":"#title"
-        "inputdata":"#inputdata"
+        "title":"#title",
+        "inputdata":"#inputdata",
         "visualization": "#visualization",
-        "viewof date_number": "#timescale",
+        "viewof date_number": "#timescale"
       };
       function render(_node, value) {
         if (!(value instanceof Element)) {
