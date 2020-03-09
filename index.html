@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <body>
 <div class="wrapper">
-      <div class="title"><b>COVID-19 Data </b></div>
+      <div class="title"></div>
+      <div class="inputdata"></div>
       <div class="timescale">
         <div class="left">Time Slider: <span id="timescale"></span></div>
       </div>
@@ -13,6 +14,8 @@
       import {Runtime} from "https://unpkg.com/@observablehq/runtime@4/dist/runtime.js";
       import notebook from "https://api.observablehq.com/@kuquanghuylcb/covid-19-data.js?v=3";
       const renders = {
+        "title":"#title"
+        "inputdata":"#inputdata"
         "visualization": "#visualization",
         "viewof date_number": "#timescale",
       };
